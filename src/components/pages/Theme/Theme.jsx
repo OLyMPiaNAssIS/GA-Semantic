@@ -20,6 +20,9 @@ import {
   TextArea,
 } from 'semantic-ui-react';
 
+// segments
+import { ButtonSegment } from './segments';
+
 // styles
 import './Theme.css';
 
@@ -35,6 +38,19 @@ const MessageExample = (props) => {
       {isMessageOpen && (
         <Message onDismiss={handleMessageDismissClick} {...props} />
       )}
+    </div>
+  );
+};
+
+const SectionWrapper = ({ title, children }) => {
+  return (
+    <div className='section'>
+      <Segment>
+        <Header as='h2' dividing>
+          {title}
+        </Header>
+        {children}
+      </Segment>
     </div>
   );
 };
@@ -153,11 +169,13 @@ export const Theme = () => {
 
   return (
     <div>
-      <div className='section'>
-        <Header as='h1'>Global Atlantic</Header>
-      </div>
+      <Header as='h1'>Global Atlantic</Header>
 
-      <div className='section'>
+      <SectionWrapper title='Button'>
+        <ButtonSegment />
+      </SectionWrapper>
+
+      {/* <div className='section'>
         <Segment>
           <Header as='h2' dividing>
             Button
@@ -668,7 +686,7 @@ export const Theme = () => {
           <Header size='small'>Small</Header>
           <Header size='tiny'>Tiny</Header>
         </Segment>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -56,6 +56,14 @@ Below are the Semantic UI components that have custom styles applied to them:
     <td>Medium</td>
   </tr>
   <tr>
+    <td><a href="https://react.semantic-ui.com/collections/form/" target="_blank">Form Label</a></td>
+    <td>Collection</td>
+    <td>form.css</td>
+    <td>High</td>
+    <td>High</td>
+    <td>High</td>
+  </tr>
+  <tr>
     <td><a href="https://react.semantic-ui.com/elements/header/" target="_blank">Header</a></td>
     <td>Element</td>
     <td>header.css</td>
@@ -118,6 +126,14 @@ Below are the Semantic UI components that have custom styles applied to them:
     <td>High</td>
     <td>High</td>
     <td>Low</td>
+  </tr>
+  <tr>
+    <td><a href="https://react.semantic-ui.com/addons/text-area/" target="_blank">Text Area</a></td>
+    <td>Addon</td>
+    <td>input.css</td>
+    <td>Low</td>
+    <td>Low</td>
+    <td>High</td>
   </tr>
 </table>
 
